@@ -2,11 +2,12 @@ main {
     display: grid;
     height: 100vh;
     grid-gap: 10px;
-    grid-template-columns: 200px 100px;
-    grid-auto-columns: 300px;
     grid-auto-flow: column;
+    /*Controla lo explicito*/
+    grid-template-columns: 200px 100px;
+    /*Controla lo implicito*/
+    grid-auto-columns: 300px;
 }
-
 div {
     background-color: goldenrod;
     display: flex;
@@ -14,7 +15,6 @@ div {
     align-items: center;
     font-family: sans-serif;
 }
-
 div:first-child,
 div:nth-child(2) {
 	background-color: purple;
