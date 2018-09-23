@@ -5,18 +5,18 @@ main {
     grid-gap: 10px;
     /*Especificar posicion de las areas*/
     grid-template-areas: 
-    "header"
-    "contenido"
-    "izquierda"
-    "derecha"
-    "footer"
+        "header"
+        "contenido"
+        "izquierda"
+        "derecha"
+        "footer";
 }
 @media(min-width: 500px){
     main{
         grid-template-areas: 
-        "header header header"
-        "izquierda contenido derecha"
-        "izquierda footer derecha";
+            "header header header"
+            "izquierda contenido derecha"
+            "izquierda footer derecha";
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: 2fr 5fr 1fr;
     }

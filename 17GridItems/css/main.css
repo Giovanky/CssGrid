@@ -1,12 +1,10 @@
 main {
-    height: 100vh;
     display: grid;
     grid-gap: 10px;
     font-family: sans-serif;
-    grid:
-        /* Filas / Columnas */
-        10fr 5fr /  auto-flow 2fr 8fr;
-    ;
+    grid-template:
+        repeat(4, 50px) / repeat(3, 1fr);
+        justify-items: center;
 }
 
 div {

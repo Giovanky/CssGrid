@@ -3,28 +3,26 @@ main {
     display: grid;
     grid-gap: 10px;
     font-family: sans-serif;
-/*    grid-template-areas:
+    /*grid-template-areas: 
         "header header header"
         "izquierda contenido derecha1"
         "izquierda contenido derecha2"
         "izquierda footer footer";
 
-    grid-template-rows:
+    grid-template-rows: 
         [inicio] 1fr [contenido-start] 2fr 1fr 1fr [fin];
-
-    grid-template-columns:
+    grid-template-columns: 
         [inicio] 1fr [contenido-start] 2fr 1fr [fin];*/
 
-    grid-template:
-        /* Filas*/
+        grid-template:
+        /*filas*/
         [inicio] "header header header" 1fr
         [contenido-start] "izquierda contenido derecha1" 2fr
         "izquierda contenido derecha2" 1fr
         "izquierda footer footer" 1fr [fin]
         /
-        /* Columnas*/
+        /*colmenas*/
         [inicio] 1fr [contenido-start] 2fr 1fr [fin]
-    ;
 }
 
 main > * {
@@ -33,7 +31,6 @@ main > * {
     align-items: center;
     background-color: goldenrod;
 }
-
 header {
     grid-area: header;
 }
